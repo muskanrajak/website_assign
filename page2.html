@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="modal.css"> <!-- Add modal styles -->
+  <style>
+    /* Additional styles for the images */
+    #recipes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .recipe-image {
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">RECIPES</h1>
+  <div id="recipes">
+    <h2 style="text-align: center;">Recipes of Our BestSellers</h2>
+    <img src="/assets/cake1.jpg" alt="Chocolate Cake - add chcolate to flour" class="recipe-image" style="width:300px; height:300px;">
+    <img src="/assets/cake2.jpeg" alt="Vanilla Oreo - add oreo in cream" class="recipe-image" style="width:300px; height:300px;">
+    <img src="/assets/cake3.jpeg" alt="Royal Pineapple - add vanilla flavouring" class="recipe-image" style="width:300px; height:300px;">
+    <img src="/assets/cake4.jpeg" alt="German Black Forest - add dark chocolate" class="recipe-image" style="width:300px; height:300px;">
+    <img src="/assets/cake5.jpeg" alt="Mud Cake - add geletin" class="recipe-image" style="width:300px; height:300px;">
+    <img src="/assets/cake6.jpeg" alt="Honey Almond Cake - add chopped almonds" class="recipe-image" style="width:300px; height:300px;">
+    <!-- Add more recipe images as needed -->
+  </div>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+  <script src="modal.js"></script>
+</body>
+</html>
